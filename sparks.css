@@ -1,0 +1,78 @@
+* {box-sizing: border-box;}
+body, html {
+  height: 100%;
+  background-color: #ffffff;
+  font-family: "Trebuchet MS";
+  color: #0b3982;
+	margin: auto;
+}
+
+.ssns {
+	font-size: 49px;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 455px;
+  height: auto;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #0b3982;
+  color: #ffffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+	  color: #ffffff;
+}
+ 
+.sidebar a.active {
+  background-color: #f9c73d;
+  color: #ffffff;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #ffffff;
+  color: #0b3982;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+footer {
+  background-color: #0b3982;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
